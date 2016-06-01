@@ -3,18 +3,10 @@ window.onload=function(){
 	//图片轮播
 	var oUl = $('.ul_swtich');
 	$('.right_jt').click(function(){
-		var panduanweizhi = oUl.width()-$(window).width();          //判断ul是否走到终点
-		if(parseInt(oUl.css("left"))<=(-panduanweizhi)){return;}
-		else{
-		oUl.animate({'left':'-=70%'},200);
-		}
+		oUl.animate({'left':'-1214px'},'slow');
 	});
 	$('.left_jt').click(function(){
-		var oUlleft = parseInt(oUl.css("left"));
-		console.log(oUlleft);
-		if(oUlleft>=0){return;}
-		else{
-		oUl.animate({'left':'+=70%'},200);}
+		oUl.animate({'left':'0px'},'slow');
 	});
 	
 	//导航
@@ -162,7 +154,7 @@ window.onload=function(){
         								return;
         							}
         							else{
-        							$('#ninety').show().animate({
+        							$('#ninety').animate({
         								opacity:"1",
         								left:"930px"
         							})
@@ -179,10 +171,10 @@ window.onload=function(){
     //互联网+ 文字动画
     function wordmove2(){
     	if(a<=b){$('#zhuanzhu,#ruanjian').stop();} 
-        //console.log($(window).width());
-        if($(window).width()<=460){$("#zhuanzhu").hide();return;}
+        console.log($(window).width());
+        if($(window).width()<=460){$("#zhuanzhu").css("top","20px").show();return;}
         else{
-    	$('#zhuanzhu').show().animate({
+    	$('#zhuanzhu').animate({
     		opacity:'1',
     		top:'100px'
     	},200,function(){

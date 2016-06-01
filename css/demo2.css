@@ -247,6 +247,7 @@ a {
 	text-align: right;
 	line-height: 4rem;
 	padding-right: 6%;
+	z-index: 9999999;
 }
 
 .navi>.now>a {

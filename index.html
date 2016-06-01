@@ -5,8 +5,10 @@
 		<title>demo1</title>
 		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 		<link rel="stylesheet" type="text/css" href="css/demo1.css"/>
+		<link rel="stylesheet" href="css/demo2.css" />
 		<script type="text/javascript" src="js/jquery.js" ></script> 
 		<script type="text/javascript" src="js/index.js" ></script>
+		<script type="text/javascript" src="js/demo2_16.js" ></script>
 	</head>
 	<body>
 		
@@ -18,12 +20,14 @@
 			
 			<div id="div01_opa">               <!--整个上半部分加黑-->
 			</div>
-				<div id="div01_top">               <!--整个顶部导航部分-->
+			
+			    <!--整个顶部导航部分-->
+				<!--<div id="div01_top">              
 					<div id="div01_top_opa">
-						<!--导航栏的加黑-->
+						
 					</div>
 				    <div id="div01_top_left">
-				    	<!--<img src="img/htLOGO.png"/>-->
+				    	<img src="img/htLOGO.png"/>
 				    	 <div id="div01_line"></div>
 				    	 <div id="title">
 				    	 	<p id='title_01'>中小型企业"互联网+"转型服务提供商</p>
@@ -66,7 +70,80 @@
 				    	</ul>				    	
 				    </div>
 				   
+				</div>-->
+				<header class="">
+			<nav class="client">
+				<!--<img src="img/htLOGO.png" />-->
+				<div class="app_title">
+					<hr />
+					<hr />
+					<hr />
 				</div>
+
+				<ul class="navigation" id="navigate">
+					<li><a href="index.html" >首页<span class="rotate">></span> </a></li>
+					<li><a href="demo2.html" class="now">服务项目</a>
+						<ul class="list">
+							<li><a href="demo2.html">软件定制服务</a></li>
+							<li><a href="demo3.html">软件外包服务</a></li>
+							<li><a href="demo4.html">移动APP开发</a></li>
+							<li><a href="demo5.html">O2O平台开发</a></li>
+							<li><a href="demo6.html">智能硬件开发</a></li>
+						</ul>
+					</li>
+					<li><a href="anli.html">案例</a></li>
+					<li><a href="demo8.html">解决方案</a>
+						<ul class="list">
+							<li><a href="demo8.html">移动销售管理系统</a></li>
+							<li><a href="demo9.html">大数据解决方案</a></li>
+							<li><a href="demo10.html">微信销售方案</a></li>
+							<li><a href="demo12.html">电商解决方案</a></li>
+						</ul>
+					</li>
+					<li><a href="demo13.html">关于我们</a>
+						<ul class="list">
+							<li><a href="demo13.html">公司介紹</a></li>
+							<li><a href="demo14.html">联系我们</a></li>
+							<li><a href="demo15.html">加入我们</a></li>
+							<li><a href="demo16.html">新闻动态</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<nav class="pc">
+				<!--<img src="img/htLOGO.png" />-->
+				<ul class="navi">
+					<li><a href="index.html">首页 </a></li>
+					<li class="now"><a href="demo2.html">服务项目</a>
+						<ul class="list">
+							<li><a href="demo2.html">软件定制服务</a></li>
+							<li><a href="demo3.html">软件外包服务</a></li>
+							<li><a href="demo4.html">移动APP开发</a></li>
+							<li><a href="demo5.html">O2O平台开发</a></li>
+							<li><a href="demo6.html">智能硬件开发</a></li>
+						</ul>
+					</li>
+					<li><a href="anli.html">案例</a></li>
+					<li><a href="demo8.html">解决方案</a>
+						<ul class="list">
+							<li><a href="demo8.html">移动销售管理系统</a></li>
+							<li><a href="demo9.html">大数据解决方案</a></li>
+							<li><a href="demo10.html">微信销售方案</a></li>
+							<li><a href="demo12.html">电商解决方案</a></li>
+						</ul>
+					</li>
+					<li><a href="demo13.html">关于我们</a>
+						<ul class="list">
+							<li><a href="demo13.html">公司介绍</a></li>
+							<li><a href="demo14.html">联系我们</a></li>
+							<li><a href="demo15.html">加入我们</a></li>
+							<li><a href="demo16.html">新闻动态</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			
+		</header>
 				
 			        <div id='left_btm' class="anniu">            <!--左边绿色小按钮-->
 			        </div>
@@ -82,7 +159,7 @@
 			    	<!--动画文字开始-->
 			    	<div id='word_animate'>
 			    		<div class="word_b" id="b1"><h1>十年</h1></div>
-			    		<div class="word_s" id='s1'><h2>研发经验</h2></div>
+			    		<div class="word_s" id='s1'><h1>研发经验</h1></div>
 			    		<div class="word_b" id="b2"><h1>上百</h1></div>
 			    		<div class='word_s' id="s2"><h1>成功案例</h1></div>
 			    		<div class="word_b" id="b3"><h1>研究院</h1></div>
@@ -132,6 +209,8 @@
 				<h2>服务贴心</h2>
 				<p>深入贯彻全民客服的理念，360度跟进你的需求</p>
 			</div>
+			
+			<div style="clear: both;"></div>
 			
 			<h2 class="success"><img src="img/hsjt.png"/>成功案例</h2>
 			
