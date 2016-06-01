@@ -1,0 +1,281 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+}
+
+a {
+	text-decoration: none;
+	background-color: none;
+}
+
+li {
+	list-style: none;
+}
+
+.f_right {
+	float: right;
+}
+.rotate{
+	transform: rotate(90deg);
+}
+
+@media only screen and (max-width: 321px) {
+	html {
+		font-size: 15px;
+	}
+	.client {
+		display: block;
+	}
+	.pc {
+		display: none;
+	}
+	.title{
+		color: white;
+		margin: 0 auto;
+		font-size: 2rem;
+		width: 10rem;
+		margin-top: 5rem;
+	}
+}
+
+@media only screen and (min-width: 321px) and (max-width: 640px) {
+	html {
+		font-size: 16px;
+	}
+	.client {
+		display: block;
+	}
+	.pc {
+		display: none;
+	}
+	.title{
+		color: white;
+		margin: 0 auto;
+		font-size: 2rem;
+		width: 10rem;
+		margin-top: 5rem;
+	}
+}
+
+@media only screen and (min-width:640px) and (max-width:1000px) {
+	html {
+		font-size: 18px;
+	}
+	.client {
+		display: block;
+	}
+	.pc {
+		display: none;
+	}
+	.title {
+	color: white;
+	text-align: center;
+	font-size: 2.5rem;
+	/*vertical-align: baseline;*/
+	margin-top: 5rem;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+	html {
+		font-size: 18px;
+	}
+	.client {
+		display: none;
+	}
+	.pc {
+		display: block;
+	}
+	.title {
+	color: white;
+	text-align: center;
+	font-size: 2.5rem;
+	/*vertical-align: baseline;*/
+	margin-top: 5rem;
+}
+}
+
+
+/*////////////////////////////////////*/
+
+
+/* ////////////// head // /////////// */
+
+
+/*///////////////////////////// //////*/
+
+.client,.pc{
+	width: 100%;
+	height: 4.5rem;
+	background: rgba(0, 0, 0, 0.6) none repeat scroll !important;
+	/*实现FF背景透明，文字不透明*/
+	background: #000;
+	filter: Alpha(opacity=20);
+	/*实现IE背景透明*/
+}
+
+.client>img {
+	display: inline-block;
+	position: relative;
+	left: 2%;
+	top: 6px;
+	height: 3rem;
+}
+
+.app_title {
+	float: right;
+	width: 1.5rem;
+	height: 1.5rem;
+	position: relative;
+	right: 3%;
+	top: 1rem;
+}
+
+.app_title hr {
+	color: white;
+	height: 3px;
+	background-color: white;
+	margin: 3px;
+}
+
+.navigation {
+	display: none;
+	z-index: 2;
+}
+
+.navigation li {
+	line-height: 2rem;
+}
+
+.navigation a {
+	color: white;
+}
+
+.navigation .now {
+	color: #5FB336;
+	border-bottom: 1px solid #5FB336;
+}
+
+.navigation {
+	width: 80%;
+	margin: 0 10%;
+	position: absolute;
+}
+
+.navigation li {
+	width: 100%;
+}
+
+.navigation li>a {
+	display: block;
+	width: 100%;
+}
+
+.navigation li>a>span {
+	display: inline-block;
+}
+
+.navigation ul {
+	background: rgba(0, 0, 0, 0.6) none repeat scroll !important;
+	/*实现FF背景透明，文字不透明*/
+	background: #000;
+	filter: Alpha(opacity=20);
+	/*实现IE背景透明*/
+}
+
+
+/*////////////////////////////////////*/
+
+
+/* ////////////// head // /////////// */
+
+
+/*///////////////////////////// //////*/
+
+
+.navi {
+	position: relative;
+	text-align: right;
+	/*font-size: 18px;*/
+	line-height: 4rem;
+	padding-right: 6%;
+}
+.navi>.now>a {
+	color: #5FB336;
+	border-bottom: 1px solid #5FB336;
+}
+.navi>li {
+	text-align: center;
+	width: 100px;
+	
+	line-height: 80px;
+	display: inline-block;
+	position: relative;
+}
+.navi li a {
+	display: block;
+	color: white;
+}
+
+.navi>li>a:hover {
+	color: #5FB336;
+	background: rgba(0, 0, 0, 0) none repeat scroll !important;
+	border-bottom: 1px solid #5FB336;
+	
+}
+.pc>img {
+	position: absolute;
+	left: 10%;
+	height: 80px;
+}
+.navi ul {
+	position: absolute;
+	line-height: 50px;
+	display: none;
+	background: rgba(0, 0, 0, 0.6) none repeat scroll !important;
+	/*实现FF背景透明，文字不透明*/
+	
+	background: #000;
+	filter: Alpha(opacity=20);
+	/*实现IE背景透明*/
+}
+.navi ul li {
+	text-align: left;
+	position: relative;
+	width: 150px;
+}
+.navi ul a {
+	display: block;
+	width: 95%;
+	padding-left: 5%;
+}
+.navi ul a:hover {
+	background-color: #5FB336;
+}
+
+
+.fwxm_bg {
+	height: 19rem;
+	background-image: url(../img/fwxm_bg.jpg);
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: hidden;
+}
+.jjfa_bg {
+	height: 19rem;
+	background-image: url(../img/jjfa_bg.png);
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: hidden;
+}
+.gywm_bg {
+	height: 19rem;
+	background-image: url(../img/gywm_bg.jpg);
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: hidden;
+}

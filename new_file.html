@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		
+		<link rel="stylesheet" href="css/new_file.css" />
+		<script type="text/javascript" src="lib/jquery-2.2.0.min.js"></script>
+		
+		<script>
+			$(document).ready(function() {
+				$(".app_title").click(function() {
+					var disp = $(".navigation").css('display');
+					if (disp == "none")
+						$(".navigation").css("display", "block");
+					else
+						$(".navigation").css("display", "none");
+				});
+//				if($(".pc").css('display')=="block"){
+//					$("header").addClass("fwxm_bg");
+//				}
+				$('.nav li ').hover(
+		function() {
+			$('ul', this).slideDown(200);
+		},
+		function() {
+			$('ul', this).slideUp(100);
+		});
+			})
+		</script>
+	</head>
+
+	<body>
+		<header class="fwxm_bg">
+			<nav class="client">
+				<img src="img/htLOGO.png" />
+				<div class="app_title">
+					<hr />
+					<hr />
+					<hr />
+				</div>
+
+				<ul class="navigation" id="navigate">
+					<li><a href="demo1.html" class="now">首页<span class="rotate">></span> </a></li>
+					<li><a href="demo2.html">服务项目</a>
+						<ul class="list">
+							<li><a href="demo2.html">软件定制服务</a></li>
+							<li><a href="demo3.html">软件外包服务</a></li>
+							<li><a href="demo4.html">移动APP开发</a></li>
+							<li><a href="demo5.html">O2O平台开发</a></li>
+							<li><a href="demo6.html">智能硬件开发</a></li>
+						</ul>
+					</li>
+					<li><a href="anli.html">案例</a></li>
+					<li><a href="demo8.html">解决方案</a>
+						<ul class="list">
+							<li><a href="demo8.html">移动销售管理系统</a></li>
+							<li><a href="demo9.html">大数据解决方案</a></li>
+							<li><a href="demo10.html">微信销售方案</a></li>
+							<li><a href="demo12.html">电商解决方案</a></li>
+						</ul>
+					</li>
+					<li><a href="demo13.html">关于我们</a>
+						<ul class="list">
+							<li><a href="demo13.html">公司介紹</a></li>
+							<li><a href="demo14.html">联系我们</a></li>
+							<li><a href="demo15.html">加入我们</a></li>
+							<li><a href="demo16.html">新闻动态</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<nav class="pc">
+				<img src="img/LOGO.png" />
+				<ul class="navi">
+					<li><a href="demo1.html">首页 </a></li>
+					<li class="now"><a href="demo2.html">服务项目</a>
+						<ul class="list">
+							<li><a href="demo2.html">软件定制服务</a></li>
+							<li><a href="demo3.html">软件外包服务</a></li>
+							<li><a href="demo4.html">移动APP开发</a></li>
+							<li><a href="demo5.html">O2O平台开发</a></li>
+							<li><a href="demo6.html">智能硬件开发</a></li>
+						</ul>
+					</li>
+					<li><a href="anli.html">案例</a></li>
+					<li><a href="demo8.html">解决方案</a>
+						<ul class="list">
+							<li><a href="demo8.html">移动销售管理系统</a></li>
+							<li><a href="demo9.html">大数据解决方案</a></li>
+							<li><a href="demo10.html">微信销售方案</a></li>
+							<li><a href="demo12.html">电商解决方案</a></li>
+						</ul>
+					</li>
+					<li><a href="demo13.html">关于我们</a>
+						<ul class="list">
+							<li><a href="demo13.html">公司介绍</a></li>
+							<li><a href="demo14.html">联系我们</a></li>
+							<li><a href="demo15.html">加入我们</a></li>
+							<li><a href="demo16.html">新闻动态</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<div class="title">贴合需求,量身定做</div>
+		</header>
+	</body>
+
+</html>

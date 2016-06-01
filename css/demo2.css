@@ -1,0 +1,531 @@
+* {
+	margin: 0;
+	padding: 0;
+	color: #666;
+	font-family: "微软雅黑";
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+	color: #000000;
+}
+
+.float {
+	float: left;
+}
+
+.clear {
+	clear: both;
+}
+
+hr {
+	margin: 0.6rem 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.rotate {
+	transform: rotate(90deg);
+}
+
+@media only screen and (max-width: 321px) {
+	html {
+		font-size: 15px;
+	}
+	
+	.client {
+		display: block;
+	}
+	.pc {
+		display: none;
+	}
+	.title {
+		color: white;
+		margin: 0 auto;
+		font-size: 2rem;
+		width: 10rem;
+		margin-top: 5rem;
+	}
+	.left_container {
+		display: none;
+	}
+	.right_container {
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 321px) and (max-width: 640px) {
+	html {
+		font-size: 16px;
+	}
+	.client {
+		display: block;
+	}
+	.pc {
+		display: none;
+	}
+	.title {
+		color: white;
+		margin: 0 auto;
+		font-size: 2rem;
+		width: 10rem;
+		margin-top: 5rem;
+	}
+	.left_container {
+		display: none;
+	}
+	.right_container {
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width:640px) and (max-width:1000px) {
+	html {
+		font-size: 18px;
+	}
+	.client {
+		display: block;
+	}
+	.pc {
+		display: none;
+	}
+	.title {
+		color: white;
+		text-align: center;
+		font-size: 2.5rem;
+		/*vertical-align: baseline;*/
+		margin-top: 5rem;
+	}
+	.left_container {
+		display: none;
+	}
+	.right_container {
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	html {
+		font-size: 18px;
+	}
+	.client {
+		display: none;
+	}
+	.pc {
+		display: block;
+	}
+	.title {
+		color: white;
+		text-align: center;
+		font-size: 2.5rem;
+		/*vertical-align: baseline;*/
+		margin-top: 5rem;
+	}
+	.left_container {
+		display: block;
+	}
+	.right_container {
+		margin-left: 6%;
+		width: 70%;
+	}
+}
+
+
+/*////////////////////////////////////*/
+
+
+/* ////////////// client head // /////////// */
+
+
+/*///////////////////////////// //////*/
+
+.client,
+.pc {
+	width: 100%;
+	height: 4.5rem;
+	background: rgba(0, 0, 0, 0.6) none repeat scroll !important;
+	/*实现FF背景透明，文字不透明*/
+	background: #000;
+	filter: Alpha(opacity=20);
+	/*实现IE背景透明*/
+}
+
+.client>img {
+	display: inline-block;
+	position: relative;
+	left: 2%;
+	top: 6px;
+	height: 3rem;
+}
+
+.app_title {
+	float: right;
+	/*width: 1.6rem;*/
+	height: 1.5rem;
+	position: relative;
+	right: 4%;
+	top: 1rem;
+}
+
+.app_title>hr {
+	color: white;
+	height: .2rem;
+	width: 1.6rem;
+	background-color: white;
+	margin: .3rem;
+}
+
+.navigation {
+	display: none;
+	z-index: 2;
+}
+
+.navigation li {
+	line-height: 2rem;
+}
+
+.navigation a {
+	color: white;
+}
+
+.navigation .now {
+	color: #5FB336;
+	border-bottom: 1px solid #5FB336;
+}
+
+.navigation {
+	width: 80%;
+	margin: 0 10%;
+	position: absolute;
+}
+
+.navigation li {
+	width: 100%;
+}
+
+.navigation li>a {
+	display: block;
+	width: 100%;
+}
+
+.navigation li>a>span {
+	display: inline-block;
+}
+
+.navigation ul {
+	background: rgba(0, 0, 0, 0.6) none repeat scroll !important;
+	/*实现FF背景透明，文字不透明*/
+	background: #000;
+	filter: Alpha(opacity=20);
+	/*实现IE背景透明*/
+}
+
+
+/*////////////////////////////////////*/
+
+
+/* //////////////pc head // /////////// */
+
+
+/*///////////////////////////// //////*/
+
+.navi {
+	position: relative;
+	text-align: right;
+	line-height: 4rem;
+	padding-right: 6%;
+}
+
+.navi>.now>a {
+	color: #5FB336;
+	border-bottom: 1px solid #5FB336;
+}
+
+.navi>li {
+	text-align: center;
+	width: 100px;
+	line-height: 80px;
+	display: inline-block;
+	position: relative;
+}
+
+.navi li a {
+	display: block;
+	color: white;
+}
+
+.navi>li>a:hover {
+	color: #5FB336;
+	background: rgba(0, 0, 0, 0) none repeat scroll !important;
+	border-bottom: 1px solid #5FB336;
+}
+
+.pc>img {
+	position: absolute;
+	left: 10%;
+	height: 80px;
+}
+
+.navi ul {
+	position: absolute;
+	line-height: 50px;
+	display: none;
+	background: rgba(0, 0, 0, 0.6) none repeat scroll !important;
+	/*实现FF背景透明，文字不透明*/
+	background: #000;
+	filter: Alpha(opacity=20);
+	/*实现IE背景透明*/
+}
+
+.navi ul li {
+	text-align: left;
+	position: relative;
+	width: 9rem;
+}
+
+.navi ul a {
+	display: block;
+	width: 95%;
+	padding-left: 5%;
+}
+
+.navi ul a:hover {
+	background-color: #5FB336;
+}
+
+
+/*//////// title bg////////// */
+
+.fwxm_bg {
+	height: 19rem;
+	background-image: url(../img/fwxm_bg.jpg);
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: hidden;
+}
+
+.jjfa_bg {
+	height: 19rem;
+	background-image: url(../img/jjfa_bg.png);
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: hidden;
+}
+
+.gywm_bg {
+	height: 19rem;
+	background-image: url(../img/gywm_bg.jpg);
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: hidden;
+}
+
+/*/////////////////////////*/
+/*/////////容器////////////*/
+/*///////////////////// ///*/
+
+.contain {
+	margin: 2rem;
+	/*background: red;*/
+}
+
+.contain  img {
+	width: 100%;
+	margin: 1rem 0;
+}
+
+/*//////////////////////////////////*/
+/* ////////////// left ////////////// */
+/*///////////////////////////////////*/
+
+.left_container {
+	width: 20%;
+}
+
+.left_container h2 {
+	line-height: 1.5rem;
+}
+
+.left_container p {
+	height: 1.5rem;
+}
+
+.libg {
+	background-color: #5fb336;
+}
+
+.libg a {
+	color: white;
+}
+
+.left_container li {
+	padding-left: 0.9rem;
+	line-height: 2.3rem;
+	border-bottom: darkgray solid 1px;
+}
+
+.left_container li a {
+	position: relative;
+	display: block;
+	width: 100%;
+}
+
+
+/*/////////////////////////////////////*/
+
+
+/* ////////////// right ////////////// */
+
+
+/*/////////////////////////////////////*/
+
+.right_container p,
+.right_container li {
+	font-size: 0.9rem;
+}
+
+.right_container li {
+	margin-left: 1rem;
+}
+
+.right_container h1 {
+	margin-bottom: 1rem;
+}
+
+.right_container h4 {
+	margin-bottom: 0.8rem;
+}
+
+.dist {
+	line-height: 1.5rem;
+	float: right;
+}
+
+.dist span {
+	color: #5fb336;
+}
+
+.intro,
+.special,
+.include,
+.flow,
+.case,
+.need,
+.join,
+.dynamic {
+	margin: 1.2rem 0;
+}
+
+.intro p,
+.case p {
+	margin: 1.2rem 0;
+	line-height: 1.8rem;
+	text-indent: 2em;
+}
+
+.special ul li,
+.include ul li,
+.flow ul li {
+	line-height: 1.4rem;
+}
+.flow img{
+	width: 80%;
+	margin: 0.6rem 0;
+}
+
+/*///////////////////////////*/
+
+
+/*//////////// demo9 ////////*/
+
+
+/*///////////////////////////*/
+
+.need ul li {
+	line-height: 2rem;
+}
+
+p.success {
+	color: #5fb336;
+	font-size: 1.5rem;
+	margin: 0.8rem 0;
+	text-indent: 0;
+}
+
+.case h1 {
+	/*line-height: 2rem;*/
+}
+
+.case_1,
+.case_2,
+.case_3,
+.case_4,
+.case_5 {
+	margin-top:3rem;
+}
+
+/*/////////////////////////////*/
+/*/////////// demo10 //////////*/
+/*////////// demo16 ///////////*/
+/*/////////////////////////////*/
+
+.market li,
+.dynamic li {
+	/*font-size: 18px;*/
+	color: #3F3F3F;
+	line-height: 2rem;
+	margin: 1rem 0;
+}
+
+.market p,
+.dynamic p {
+	text-indent: 2em;
+	line-height: 1.6rem;
+}
+
+
+/*/////////////////////////////*/
+/*/////////// demo15 //////////*/
+/*/////////////////////////////*/
+
+.join>ul>li {
+	/*font-size: 18px;*/
+}
+
+.join p {
+	margin: 1rem;
+}
+
+.post>li {
+	color: #5FB336;
+	font-size: 1rem;
+	margin-top: 1.2rem;
+}
+
+.request {
+	margin: 0.8rem;
+}
+
+.request li {
+	line-height: 1.2rem;
+}
+
+.post p {
+	color: #202223;
+}
